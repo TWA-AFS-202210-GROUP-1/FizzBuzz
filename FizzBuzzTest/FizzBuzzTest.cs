@@ -1,18 +1,22 @@
-using FizzBuzz;
-using Moq;
-using Xunit;
-
 namespace FizzBuzzTest
 {
+    using Xunit;
+    using FizzBuzz;
+
     public class FizzBuzzTest
     {
         [Fact]
-        public void Test1()
+        public void Should_return_normal_number_when_count_off_given_normal_number()
         {
-            FizzBuzz.FizzBuzz fizzBuzz = new FizzBuzz.FizzBuzz();
+            //given
+            var fizzBuzz = new FizzBuzz();
+            int number = 1;
+
+            //when
+            var result = fizzBuzz.CountOff(number);
 
             //then
-            Assert.NotNull(fizzBuzz);
+            Assert.Equal("1", result);
         }
     }
 }
