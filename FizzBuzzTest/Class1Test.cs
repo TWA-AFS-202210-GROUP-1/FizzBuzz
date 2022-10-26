@@ -27,7 +27,7 @@ namespace FizzBuzzTest
             var result = fizzbuzz.CountOff(num);
 
             //then
-            Assert.Equal("3", result);
+            Assert.Equal("Fizz", result);
         }
 
         [Fact]
@@ -39,11 +39,11 @@ namespace FizzBuzzTest
             var result = fizzbuzz.CountOff(num);
 
             //then
-            Assert.Equal("B", result);
+            Assert.Equal("Buzz", result);
         }
 
         [Fact]
-        public void Should_return_buzz_when_countoff_given_only_multipy_of_seven()
+        public void Should_return_whizz_when_countoff_given_only_multipy_of_seven()
         {
             var fizzbuzz = new FizzBuzz.Class1();
             var num = 7;
@@ -52,6 +52,30 @@ namespace FizzBuzzTest
 
             //then
             Assert.Equal("Whizz", result);
+        }
+
+        [Fact]
+        public void Should_return_fizz_when_countoff_given_contains_three()
+        {
+            var fizzbuzz = new FizzBuzz.Class1();
+            var num = 315;
+
+            var result = fizzbuzz.CountOff(num);
+
+            //then
+            Assert.Equal("Fizz", result);
+        }
+
+        [Fact]
+        public void Should_return_fizzbuzz_when_countoff_given_multiply_three_and_five()
+        {
+            var fizzbuzz = new FizzBuzz.Class1();
+            var num = 15;
+
+            var result = fizzbuzz.CountOff(num);
+
+            //then
+            Assert.Equal("FizzBuzz", result);
         }
     }
 }
