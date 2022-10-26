@@ -19,5 +19,19 @@ namespace FizzBuzzTest
             //then
             Assert.Equal("1", result);
         }
+
+        [Fact]
+        public void Should_return_Fizz_when_input_only_multiple_of_3()
+        {
+            //give
+            FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
+            int num = 6;
+
+            //when
+            string result = fizzBuzzWhizz.CountOff(num);
+
+            //then
+            Assert.Equal("Fizz", result);
+        }
     }
 }
