@@ -7,6 +7,11 @@ namespace FizzBuzz
         public object CountOff(int number)
         {
             var result = string.Empty;
+            if (number.ToString().Contains("3"))
+            {
+                return "Fizz";
+            }
+
             if (number % 3 == 0)
             {
                 result += "Fizz";
