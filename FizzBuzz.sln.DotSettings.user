@@ -2,5 +2,6 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=968a1a52_002Dbc97_002D445a_002D98af_002Df27852549656/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Should_get_1_when_count_off_then_1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::A8ADF2B5-445D-4A86-8DBF-0350586E4EFC::net6.0::FizzBuzzTest.FizzBuzzWhizzTest.Should_return_Fizz_when_input_only_multiple_of_5&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::A8ADF2B5-445D-4A86-8DBF-0350586E4EFC::net6.0::FizzBuzzTest.FizzBuzzWhizzTest.Should_return_FizzBuzz_when_input_multiple_of_3_and_5&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

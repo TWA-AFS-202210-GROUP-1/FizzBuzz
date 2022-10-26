@@ -35,7 +35,7 @@ namespace FizzBuzzTest
         }
 
         [Fact]
-        public void Should_return_Fizz_when_input_only_multiple_of_5()
+        public void Should_return_Buzz_when_input_only_multiple_of_5()
         {
             //give
             FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
@@ -49,7 +49,7 @@ namespace FizzBuzzTest
         }
 
         [Fact]
-        public void Should_return_Fizz_when_input_only_multiple_of_7()
+        public void Should_return_Whizz_when_input_only_multiple_of_7()
         {
             //give
             FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
@@ -60,6 +60,62 @@ namespace FizzBuzzTest
 
             //then
             Assert.Equal("Whizz", result);
+        }
+
+        [Fact]
+        public void Should_return_FizzBuzz_when_input_multiple_of_3_and_5()
+        {
+            //give
+            FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
+            int num = 15;
+
+            //when
+            string result = fizzBuzzWhizz.CountOff(num);
+
+            //then
+            Assert.Equal("FizzBuzz", result);
+        }
+
+        [Fact]
+        public void Should_return_FizzBuzzWhizz_when_input_multiple_of_3_and_5_and7()
+        {
+            //give
+            FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
+            int num = 105;
+
+            //when
+            string result = fizzBuzzWhizz.CountOff(num);
+
+            //then
+            Assert.Equal("FizzBuzzWhizz", result);
+        }
+
+        [Fact]
+        public void Should_return_FizzWhizz_when_input_multiple_of_3_and_7()
+        {
+            //give
+            FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
+            int num = 21;
+
+            //when
+            string result = fizzBuzzWhizz.CountOff(num);
+
+            //then
+            Assert.Equal("FizzWhizz", result);
+        }
+
+        [Fact]
+        public void Should_return_BuzzWhizz_when_input_multiple_of_5_and_7()
+        {
+            //give
+            FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
+            int num = 35;
+
+            //when
+            string result = fizzBuzzWhizz.CountOff(num);
+
+            //then
+            Assert.Equal("BuzzWhizz", result);
         }
     }
 }
