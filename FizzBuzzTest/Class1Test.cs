@@ -22,12 +22,36 @@ namespace FizzBuzzTest
         public void Should_return_fizz_when_countoff_given_only_multipy_of_three()
         {
             var fizzbuzz = new FizzBuzz.Class1();
-            var num = 3;
+            var num = 6;
 
             var result = fizzbuzz.CountOff(num);
 
             //then
             Assert.Equal("3", result);
+        }
+
+        [Fact]
+        public void Should_return_buzz_when_countoff_given_only_multipy_of_five()
+        {
+            var fizzbuzz = new FizzBuzz.Class1();
+            var num = 5;
+
+            var result = fizzbuzz.CountOff(num);
+
+            //then
+            Assert.Equal("B", result);
+        }
+
+        [Fact]
+        public void Should_return_buzz_when_countoff_given_only_multipy_of_seven()
+        {
+            var fizzbuzz = new FizzBuzz.Class1();
+            var num = 7;
+
+            var result = fizzbuzz.CountOff(num);
+
+            //then
+            Assert.Equal("Whizz", result);
         }
     }
 }
