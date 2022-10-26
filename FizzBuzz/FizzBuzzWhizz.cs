@@ -10,8 +10,18 @@ namespace FizzBuzz
             {
                 return "Fizz";
             }
+            else if (num % 5 == 0)
+            {
+                return "Buzz";
+            }
+            else if (num % 7 == 0)
+            {
+                return "Whizz";
+            }
             else
-            { return num.ToString(); }
+            {
+                return num.ToString();
+            }
         }
     }
 }
