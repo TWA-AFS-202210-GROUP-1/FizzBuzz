@@ -131,5 +131,19 @@ namespace FizzBuzzTest
             //then
             Assert.Equal("Fizz", result);
         }
+
+        [Fact]
+        public void Should_return_Fizz_when_input_contains_3_ignore_rules()
+        {
+            //give
+            FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
+            int num = 63;
+
+            //when
+            string result = fizzBuzzWhizz.CountOff(num);
+
+            //then
+            Assert.Equal("Fizz", result);
+        }
     }
 }
