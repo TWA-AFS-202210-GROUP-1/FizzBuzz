@@ -32,5 +32,19 @@ namespace FizzBuzzTest
             //then
             Assert.Equal("Fizz", result);
         }
+
+        [Fact]
+        public void Should_return_Fizz_when_count_off_given_only_multiple_of_five()
+        {
+            //given
+            var fizzBuzz = new FizzBuzz();
+            int number = 5;
+
+            //when
+            var result = fizzBuzz.CountOff(number);
+
+            //then
+            Assert.Equal("Buzz", result);
+        }
     }
 }
