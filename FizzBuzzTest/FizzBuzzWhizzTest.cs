@@ -123,7 +123,7 @@ namespace FizzBuzzTest
         {
             //give
             FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
-            int num = 13;
+            int num = 35;
 
             //when
             string result = fizzBuzzWhizz.CountOff(num);
