@@ -7,7 +7,6 @@ namespace FizzBuzz
         public string CountOff(int num)
         {
             var snum = num.ToString();
-            //string[] numlist = snum.Split();
             bool b = snum.Contains("3");
             if (b)
             {
