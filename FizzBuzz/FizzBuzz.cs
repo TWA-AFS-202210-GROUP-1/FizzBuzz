@@ -6,28 +6,34 @@ namespace FizzBuzz
     {
         public object CountOff(int number)
         {
-            var result = string.Empty;
-            if (number.ToString().Contains("3"))
+            if (IsContains3(number))
             {
-                return "Fizz";
+                return FizzBuzzType.Fizz.ToString();
             }
 
-            if (number % 3 == 0)
+            var fizzBuzzString = string.Empty;
+
+            foreach (FizzBuzzType type in Enum.GetValues(typeof(FizzBuzzType)))
             {
-                result += "Fizz";
+                fizzBuzzString += GenerateFizzBuzz(type, number);
             }
 
-            if (number % 5 == 0)
+            return string.IsNullOrEmpty(fizzBuzzString) ? number.ToString() : fizzBuzzString;
+        }
+
+        private bool IsContains3(int number)
+        {
+            return number.ToString().Contains("3");
+        }
+
+        private string GenerateFizzBuzz(FizzBuzzType type, int number)
+        {
+            if (number % (int)type == 0)
             {
-                result += "Buzz";
+                return type.ToString();
             }
 
-            if (number % 7 == 0)
-            {
-                result += "Whizz";
-            }
-
-            return string.IsNullOrEmpty(result) ? number.ToString() : result;
+            return string.Empty;
         }
     }
 }
