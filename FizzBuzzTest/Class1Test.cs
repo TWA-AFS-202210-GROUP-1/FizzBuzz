@@ -79,7 +79,7 @@ namespace FizzBuzzTest
         }
 
         [Fact]
-        public void Should_return_fizzbuzz_when_countoff_given_multiply_three_and_seven()
+        public void Should_return_fizzwhizz_when_countoff_given_multiply_three_and_seven()
         {
             var fizzbuzz = new FizzBuzz.Class1();
             var num = 21;
@@ -88,6 +88,18 @@ namespace FizzBuzzTest
 
             //then
             Assert.Equal("FizzWhizz", result);
+        }
+
+        [Fact]
+        public void Should_return_buzzwhizz_when_countoff_given_multiply_five_and_seven()
+        {
+            var fizzbuzz = new FizzBuzz.Class1();
+            var num = 70;
+
+            var result = fizzbuzz.CountOff(num);
+
+            //then
+            Assert.Equal("BuzzWhizz", result);
         }
     }
 }
