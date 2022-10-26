@@ -17,5 +17,17 @@ namespace FizzBuzzTest
             //then
             Assert.Equal("1", result);
         }
+
+        [Fact]
+        public void Should_return_fizz_when_countoff_given_only_multipy_of_three()
+        {
+            var fizzbuzz = new FizzBuzz.Class1();
+            var num = 3;
+
+            var result = fizzbuzz.CountOff(num);
+
+            //then
+            Assert.Equal("3", result);
+        }
     }
 }
