@@ -3,5 +3,6 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::A8ADF2B5-445D-4A86-8DBF-0350586E4EFC::net6.0::FizzBuzzTest.FizzBuzzWhizzTest.Should_return_Fizz_when_input_only_multiple_of_5&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::A8ADF2B5-445D-4A86-8DBF-0350586E4EFC::net6.0::FizzBuzzTest.FizzBuzzWhizzTest.Should_return_FizzBuzz_when_input_multiple_of_3_and_5&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::A8ADF2B5-445D-4A86-8DBF-0350586E4EFC::net6.0::FizzBuzzTest.FizzBuzzWhizzTest.Should_return_Fizz_when_input_contains_3&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

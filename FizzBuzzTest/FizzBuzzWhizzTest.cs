@@ -109,13 +109,27 @@ namespace FizzBuzzTest
         {
             //give
             FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
-            int num = 35;
+            int num = 70;
 
             //when
             string result = fizzBuzzWhizz.CountOff(num);
 
             //then
             Assert.Equal("BuzzWhizz", result);
+        }
+
+        [Fact]
+        public void Should_return_Fizz_when_input_contains_3()
+        {
+            //give
+            FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
+            int num = 13;
+
+            //when
+            string result = fizzBuzzWhizz.CountOff(num);
+
+            //then
+            Assert.Equal("Fizz", result);
         }
     }
 }

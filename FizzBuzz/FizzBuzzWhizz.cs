@@ -6,6 +6,13 @@ namespace FizzBuzz
     {
         public string CountOff(int num)
         {
+            string num2Str = num.ToString();
+
+            if (num2Str.Contains("3"))
+            {
+                return "Fizz";
+            }
+
             if (num % 3 == 0)
             {
                 if (num % 5 == 0 && num % 7 == 0)
