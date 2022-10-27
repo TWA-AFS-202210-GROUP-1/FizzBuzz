@@ -4,7 +4,7 @@ namespace FizzBuzz
 {
     public class FizzBuzz
     {
-        public object CountOff(int number)
+        public string CountOff(int number)
         {
             if (IsContains3(number))
             {
